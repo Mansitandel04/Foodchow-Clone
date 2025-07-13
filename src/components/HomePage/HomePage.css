@@ -1,0 +1,11 @@
+@media (max-width:768px){
+  .homepage{
+    width: 800px;
+  }
+}
+
+@media (max-width:450px){
+  .homepage{
+    width: 400px;
+  }
+}

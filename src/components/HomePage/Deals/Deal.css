@@ -1,0 +1,47 @@
+
+.deal-cards{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width:350px;
+  border: 1px solid rgb(207, 194, 194);
+border-radius: 15px;
+}
+.upperpart {
+  color: #372f2f;
+}
+.upperpart img{
+width: 350px;
+height: 190px;
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+margin-bottom: 10px;
+}
+
+.lowerpart{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.lowerpart ul{
+  font-size: 15px;
+  font-weight: 500;
+  color: #097733;
+  font-weight: bold;
+}
+
+.lowerpart button{
+  border-radius: 20px;
+margin-right: 25px;
+color: #fff;
+background-color: #097733;
+
+}
+
+.lowerpart button:hover{
+color: #097733
+;background-color: #fff;
+transition: 0.4s ease-out;
+}
+
