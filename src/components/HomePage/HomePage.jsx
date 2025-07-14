@@ -8,13 +8,14 @@ import DinnerMenu from './DinnerMenu/DinnerMenu';
 
 const HomePage = () => {
   return (
-    <BrowserRouter> <div className='col-6  homepage rounded-4 shadow m '> 
-    
-      <Routes>
-         <Route path="/breakfast" element={<Breakfast/>}/>  <Route path="/" element={<MainMenu/>}/><Route path="/dinnermenu" element={<DinnerMenu/>}/>
-      </Routes>
-     
-    </div></BrowserRouter>
+   <div className='col-6 homepage rounded-4 shadow m'>
+  <Routes>
+    <Route path="/breakfast" element={<Breakfast />} />
+    <Route path="/" element={<MainMenu />} />
+    <Route path="/dinnermenu" element={<DinnerMenu />} />
+  </Routes>
+</div>
+
  
   );
 }
