@@ -5,7 +5,7 @@ import emptycart from "../../../assets/media/emptyCart.png"
 const Homecart = () => {
   return (
      <>
-      <div className=" col-3 homecart rounded-4 shadow m-1">
+      <div className=" col-2 homecart rounded-4 shadow m-1">
 
          <div> <h3 className=' m-0 '>Your Cart</h3></div><hr />
   
@@ -14,6 +14,8 @@ const Homecart = () => {
  
     </div>
     <hr />
+
+
      </>
   );
 }

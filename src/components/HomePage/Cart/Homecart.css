@@ -1,12 +1,9 @@
 .homecart {
   width: 290px;
-
   text-align: center;
-
   display: flex;
   flex-direction: column;
   align-items: center;
-
   height: 100vh;
   border: 0.5px rgb(200, 198, 198) solid;
 }
@@ -20,8 +17,7 @@
   color: #097733;
   font-weight: 700;
   font-size: 20px;
- padding-top: 20px;
-
+  padding-top: 20px;
 }
 
 .homecart label {
@@ -31,8 +27,8 @@
 }
 
 /* media query */
-  @media (max-width:768px){
-    .homecart{
-      display: none;
-    }
+@media (max-width: 768px) {
+  .homecart {
+    display: none;
   }
+}

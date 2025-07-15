@@ -2,6 +2,7 @@ import React from "react";
 import "./Footer.css";
 import footerimg from "../../assets/media/foodchow-logo.png";
 import { Link } from "react-router-dom";
+import Homecart from "../HomePage/Cart/Homecart";
 
 const Footer = () => {
   return (
@@ -15,7 +16,7 @@ const Footer = () => {
 
       <div className="mobile-footer  fixed-bottom">
         <h3 className="">Rs.0.00</h3>
-        <button className="footer-cart"> View Cart</button>
+       <Link to='/homecart'> <button className="footer-cart">  View Cart</button></Link>
       </div>
     </>
   );

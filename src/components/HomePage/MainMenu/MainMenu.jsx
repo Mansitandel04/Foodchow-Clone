@@ -110,10 +110,12 @@ const MainMenu = ({ setActiveCategoryId }) => {
                   <div className="menu-item-text">
                     <h5>{item.ItemName}</h5>
                     {item.Description && <p className="item-description">{item.Description}</p>}
-                    <div className="price-container">
+                    <div className="price-container ">
                       <span className="price">Rs. {item.basePrice}</span>
+                    
                       {item.isSoldOut && <span className="sold-out">Sold Out</span>}
                     </div>
+                    <button className="additem">Add +</button>
                   </div>
                   {imageUrl && (
                     <div className="menu-item-image">

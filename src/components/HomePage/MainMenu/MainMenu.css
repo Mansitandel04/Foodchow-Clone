@@ -112,7 +112,13 @@ margin: 0 0 4.5px;
   font-size: 0.8rem;
   font-weight: 500;
 }
-
+.additem {
+margin-top: 15px;
+padding: 10px 20px;
+color: #fff;
+border: none;background-color: #097733;
+border-radius: 25px;
+}
 .menu-item-image {
   width: 80px;
   height: 80px;
