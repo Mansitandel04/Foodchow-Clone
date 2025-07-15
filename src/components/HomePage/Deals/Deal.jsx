@@ -10,7 +10,7 @@ const Deal = ({ imgurl , alt , title , subtitle , price  }) => {
                 src={imgurl}
                 alt={alt}
               />
-              <div className="row p-3 pb-0">
+              <div className="row p-2 pb-0">
                 <h5 className="col-8">{title}</h5>
                 <p className="col-8 ">{subtitle}</p>
                 <p className=" col-4"> Rs.{price}</p>

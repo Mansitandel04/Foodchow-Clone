@@ -59,7 +59,7 @@ const MainMenu = ({ setActiveCategoryId }) => {
   if (error) return <div className="main-menu">{error}</div>;
 
   return (
-    <div className="main-menu">
+    <div className="main-menu ">
       <Searchbar />
 
       {/* Deals */}

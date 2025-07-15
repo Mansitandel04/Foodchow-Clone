@@ -1,6 +1,9 @@
 .main-menu{
 align-items: center;
+
 }
+
+
 
 .deal{
 border: 1px solid rgb(248, 240, 240);
@@ -70,6 +73,7 @@ flex-direction: column;
   display: flex;
   justify-content: space-between;
   padding: 20px;
+
 }
 
 .menu-item-text {
@@ -87,6 +91,7 @@ margin: 0 0 4.5px;
   color: #666;
   font-size: 14px;
   font-weight: 600;
+  width: 300px;
 }
 
 .price-container {

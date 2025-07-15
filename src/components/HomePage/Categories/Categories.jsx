@@ -8,7 +8,7 @@ const Categories = () => {
 
   return (
     <>
-      <div className="col-3 categories rounded-4 shadow m-3 ">
+      <div className="col-3 categories rounded-4 shadow  m-3">
         <h3 className=" m-0 ">CATEGORIES</h3>
         <hr />
         {/* options formenu  */}
