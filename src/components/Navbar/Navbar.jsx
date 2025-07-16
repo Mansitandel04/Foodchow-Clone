@@ -1,76 +1,18 @@
-// import React, { useState } from "react";
-// import logo from "../Navbar/logo.jpg";
-// import "./Navbar.css";
 
-// const Navbar=() =>{
-
-//   return (
-
-//    <>
-//       <nav className="navbar bg-body-tertiary fixed-top">
-//         <div className="container-fluid border-bottom shadow main row-md  ">
-//           {/* Logo and Name of restarant */}
-
-//           <div className="leftpart ">
-
-//             <a className="logo" href="/">
-//               <img src={logo} alt="logo" />
-//             </a>
-//             <div className="name">
-//               <h3>FoodChow Demo India</h3>
-//               <span>
-//                 <i className="fa-solid fa-location-dot"></i> Surat,Gujarat,
-//                 India
-//               </span>
-//             </div>
-//           </div>
-
-// {/* <div className="nav-toggler" ><i className="fa-solid fa-bars" ></i></div> */}
-//     {/* Middle part of navbar */}
-//           <div className="about ">
-//             <span className="">Restaurat is Open</span>
-//             <p className="text-muted ">
-//               Timing 10:00 am - 04:00 pm <i className="fa fa-info-circle" />
-//             </p>
-//           </div>
-
-//    {/* Last part of navbar / buttons */}
-//           <div className="right-part ">
-//             <button>Choose Services</button>
-
-//             <button>Book Now</button>
-
-//             <button className="rounded-5">
-//               <i className="fa fa-phone " /> &nbsp;
-//               675198515
-//             </button>
-
-//             <button className="rounded-5">
-//               <i className="fa fa-globe me-2 " />
-//               en
-//             </button>
-//           </div>
-
-//         </div>
-
-// {/* second row / menu links */}
-//         <div className="menu"><a href='/'className="menu-link ">Main Menu</a>
-//         <a href='/breakfast' className="menu-link">Breakfast </a>
-//         <a href='/dinnermenu' className="menu-link">DinnerMenu</a></div>
-//       </nav>
-//     </>
-//   );
-// }
-
-// export default Navbar;
 import React, { useState  ,useEffect} from "react";
 import logo from "../Navbar/logo.jpg";
 import "./Navbar.css";
+import BookTablePopup from "../BookTablePopup/BookTablePopup";
+import ChooseService from "../ChooseService/ChooseService";
+
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [currentTime, setCurrentTime] = useState(new Date());
+   const [showBookPopup, setShowBookPopup] = useState(false);
+      const [showServicePopup, setShowServicePopup] = useState(false);
+   const [activeButton , setActiveBtton]=useState(null)
 
   // for tooglemenu
   const toggleMenu = () => {
@@ -90,10 +32,13 @@ const Navbar = () => {
 
     setIsOpen(totalMinutes >= openTime &&  totalMinutes < closeTime);  };
 
-  
+  // for activebutton
  
+  const handleButtonClick =(buttonName)=>{
+    setActiveBtton(buttonName === activeButton ? null : buttonName);
+  }
   
-  return (
+  return (  
     <>
       <nav className="navbar bg-body-tertiary fixed-top">
         <div className="container-fluid border-bottom shadow main row-md">
@@ -126,27 +71,27 @@ const Navbar = () => {
 
           {/* Last part of navbar / buttons */}
           <div className={`right-part ${isMenuOpen ? "mobile-visible" : ""}`}>
-            <button>Choose Services</button>
-            <button>Book Now</button>
-            <button className="rounded-5">
+            <button onClick={() => setShowServicePopup(true)}>Choose service </button>
+             {showServicePopup && <ChooseService onClose={() => setShowServicePopup(false)} />}
+            <button onClick={() => setShowBookPopup(true)}>Book Now</button>
+      
+      {showBookPopup && <BookTablePopup onClose={() => setShowBookPopup(false)} />}
+            <button className={ `rounded-5 ${activeButton ==="675198515" ?"active" : ''} ` } onClick={()=> handleButtonClick(675198515)}>
               <i className="fa fa-phone" /> &nbsp; 675198515
             </button>
-            <button className="rounded-5">
-              <i className="fa fa-globe me-2" />
-              en
-            </button>
+            
           </div>
         </div>
 
         {/* second row / menu links */}
-        <div className="menu container-fluid">
+        <div className={`menu ${isMenuOpen ? "mobile-visible" : ""}`}>
           <a href="/" className="menu-link">
             Main Menu
           </a>
-          <a href="/breakfast" className="menu-link">
+          <a href="#category-22156" className="menu-link">
             Breakfast
           </a>
-          <a href="/dinnermenu" className="menu-link">
+          <a href="#category-22555" className="menu-link">
             DinnerMenu
           </a>
         </div>

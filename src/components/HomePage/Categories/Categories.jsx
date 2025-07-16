@@ -14,21 +14,22 @@ const Categories = () => {
         {/* options formenu  */}
         <div className="ul ">
          <a href="/"> <li> Deals</li></a>
-        <a href="/">  <li> Hamra Burger</li></a>
-          <a href="/"><li> Burgers</li></a>
-        <a href="/">  <li> Momo Platter </li></a>
-         <a href="/"> <li> Pizza</li></a>
-         <a href="/"><li> Une Entrée </li></a>
-         <a href="/"> <li> Appetizer </li></a>
-         <a href="/"> <li> Frankie</li></a>
-        <a href="/breakfast">  <li> JUICE </li></a>
-          <a href="/breakfast"> <li>નાસ્તા </li></a>
-        <a href="/"> <li> Fast Food </li></a>
-         <a href="/"> <li> Sandwitches</li></a>
-           <a href="/"> <li> Sweet</li></a>
-            <a href="/">   <li>Demo</li></a>
-             <a href="/">   <li> Test Purches</li></a>
-               <a href="/">  <li> Fish</li></a>
+        <a href="#category-36070"><li>Hamra Burger</li></a>
+<a href="#category-24741"><li>Burgers</li></a>
+<a href="#category-25123"><li>Momo Platter</li></a>
+<a href="#category-22999"><li>Pizza</li></a>
+<a href="#category-26610"><li>Une Entrée</li></a>
+<a href="#category-23481"><li>Appetizer</li></a>
+<a href="#category-26294"><li>Frankie</li></a>
+<a href="#category-22156"><li>JUICE</li></a>
+<a href="#category-26377"><li>નાસ્તા</li></a>
+<a href="#category-24849"><li>Fast Food</li></a>
+<a href="#category-22555"><li>Sandwiches</li></a>
+<a href="#category-24743"><li>Sweet</li></a>
+<a href="#category-34539"><li>Demo</li></a>
+<a href="#category-35305"><li>Test Purchase</li></a>
+<a href="#category-37305"><li>Fish</li></a>
+
         </div>
       </div>
     </>

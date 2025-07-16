@@ -93,6 +93,17 @@
   border-radius: 25px;
 }
 
+/* Active button styles */
+.right-part button.active {
+  background-color: #4CAF50; /* Green background */
+  color: white;
+  border-color: #4CAF50;
+}
+.right-part button .active {
+  background-color: #4CAF50;
+  color: white;
+}
+
 /* Mobile styles */
 .nav-toggler {
   display: none;
@@ -124,6 +135,7 @@
     padding: 1rem;
     background-color: white;
     border-top: 1px solid #eee;
+  
   }
 
   .right-part.mobile-visible {
@@ -131,12 +143,12 @@
     gap: 0.5rem;
   }
 
-  .menu.mobile-visible {
-    flex-direction: column;
+   .menu.mobile-visible {
+    flex-direction: row;
     gap: 1rem;
     align-items: center;
-  }
-}
+  
+  }}
 
 @media (max-width: 576px) {
   .leftpart {
@@ -149,3 +161,20 @@
     font-size: 1rem;
   }
 }
+@media (max-width: 436px) {
+
+
+  .logo img {
+  height: 40px;
+  width: auto;
+}
+.leftpart{
+  display: flex !important;
+justify-content: space-between;
+flex-direction: row;
+
+}
+
+  .name h3 {
+    font-size: 1rem;
+  }}

@@ -1,0 +1,175 @@
+/* BookTablePopup.css */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+  max-height: 80vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none !important;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #666;
+ 
+}
+
+.popup-content h3  .popup-content h4 {
+  margin-top: 0;
+  color: #333;
+  font-weight: 700;
+}
+.search-section {
+  text-align: center;
+}
+.search-section p {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.option-section {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 20px;
+  border: 1px solid #0c0c0c;
+  padding: 30px;
+}
+
+.option-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.option-controls {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+select {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.proceed-btn{
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid #f6eded !important;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+   background-color: #097733 !important;
+  color: white !important ;
+}
+
+.proceed-btn :hover {
+  background-color: #fff;
+  color: #097733
+}
+
+
+.booking-summary p{
+  border: 1px solid #097733;
+  border-radius: 5px;
+  padding: 4px 22px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+}
+
+.booking-summary span{
+color: #666;
+font-weight: 500 !important;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+ margin-top: 1rem;
+}
+
+.form-group {
+  margin-bottom: 10px;
+  display: flex;
+  border: #097733 2px solid;
+  border-radius: 8px;
+}
+
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.form-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.back-btn {
+  flex: 1;
+  padding: 1rem;
+  background-color:#097733 !important;
+  color: #fff !important;
+  border: 1px solid #ddd !important;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+
+}
+
+.back-btn:hover {
+  background-color: #f6eeee !important;
+  color: #097733 !important;
+  border: #097733 2px solid !important;
+}
+
+
+
+@media (max-width: 480px) {
+  .option-controls {
+    grid-template-columns: 1fr;
+  }
+
+  .popup-content {
+    padding: 1.5rem;
+  }
+
+
+
+}
+

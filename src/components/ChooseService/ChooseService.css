@@ -1,0 +1,114 @@
+popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+  max-height: 80vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  background: none;
+  border: none !important;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #666;
+}
+
+.services {
+  display: flex;
+  gap: 1rem;
+}
+.services button {
+  border: none;
+  display: block;
+  align-items: center;
+  padding: 5px;
+}
+
+.services button img {
+  width: 120px;
+}
+
+/* pickup service popup css */
+.pickup-options {
+font-weight: 700;
+text-align: center;
+}
+
+
+.time-selection{
+  padding: 10px 20px;
+flex-direction: column;
+text-align: center;
+  font-size: 1.3rem;
+ 
+}
+.time-options button{
+border-radius: 10px !important;
+margin: 5px 15px;
+padding: 5px 25px;
+}
+.time-options button :hover{
+background-color: #097733 !important;
+color: #fff !important;
+}
+
+
+/* style for dinein popup */
+
+.dinein-options{
+  text-align: center;
+
+}
+.dinein-options h3{
+  font-weight: 700;
+}
+.table-grid{
+  border: 1px solid #097733;
+  border-radius: 10px;
+  padding: 30px 20px 
+}
+
+.table-row button{
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin: 5px 2px;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+.action-buttons{
+  display: flex;
+  margin: 15px 20px;
+  gap: 11rem;
+}
+
+@media (max-width: 786px) {
+  .popup-content {
+    padding: 0.5rem;
+  }
+  .services button img {
+    width: 100px;
+  }
+  .close-btn {
+    top: 0.3rem;
+  }
+}
