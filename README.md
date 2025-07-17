@@ -16,3 +16,12 @@ If you are developing a production application, we recommend using TypeScript wi
     "lint": "eslint .",
     "preview": "vite preview"
   }, -->
+
+   <!-- "scripts": {
+    "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  }, -->
